@@ -9,5 +9,4 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     evolution_Mi439-user \
-    evolution_Mi439-userdebug \
-    evolution_Mi439-eng
+    evolution_Mi439-userdebug
