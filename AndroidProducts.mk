@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xdroid_Mi439.mk
+    $(LOCAL_DIR)/evolution_Mi439.mk
 
 COMMON_LUNCH_CHOICES := \
-    xdroid_Mi439-user \
-    xdroid_Mi439-userdebug \
-    xdroid_Mi439-eng
+    evolution_Mi439-user \
+    evolution_Mi439-userdebug \
+    evolution_Mi439-eng
