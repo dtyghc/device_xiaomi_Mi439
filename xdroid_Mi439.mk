@@ -12,11 +12,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit some common xdroidsp stuff.
 $(call inherit-product, vendor/xdroid/config/common.mk)
 XDROID_BOOT := 720
-XDROID_MAINTAINER := ChuckDXD
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
+XDROID_MAINTAINER := Anant_Goel
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_STOCK_ARCORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_SUPPORTS_QUICK_TAP := false
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USES_BLUR := true
+TARGET_INCLUDE_PIXEL_CHARGER := true
+IS_PHONE := true
 
 # Inherit from Mi439 device
 $(call inherit-product, device/xiaomi/Mi439/device.mk)
@@ -28,10 +32,10 @@ PRODUCT_PACKAGES += \
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Mi439
-PRODUCT_NAME := xdroid_Mi439
+PRODUCT_NAME := xdroid_olives
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := SDM439
+PRODUCT_MODEL := Mi439
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
