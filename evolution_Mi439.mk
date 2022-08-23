@@ -15,11 +15,11 @@ $(call inherit-product, vendor/evolution/config/common.mk)
 $(call inherit-product, device/xiaomi/Mi439/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := olives
-PRODUCT_NAME := evolution_olives
+PRODUCT_DEVICE := Mi439
+PRODUCT_NAME := evolution_Mi439
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := olives
+PRODUCT_MODEL := Mi439
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
