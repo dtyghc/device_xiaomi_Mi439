@@ -23,6 +23,11 @@ PRODUCT_MODEL := Mi439
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
+# Overlays
+PRODUCT_PACKAGES += \
+    xiaomi_pine_overlay_lineage \
+    xiaomi_olive_overlay_lineage
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Some build flags
