@@ -4,14 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Partitions
-SSI_PARTITIONS := product system system_ext
-TREBLE_PARTITIONS := odm vendor
-ALL_PARTITIONS := $(SSI_PARTITIONS) $(TREBLE_PARTITIONS)
-
-$(foreach p, $(call to-upper, $(ALL_PARTITIONS)), \
-    $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := ext4) \
-    $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
+#    $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
 
 # Inherit from common mithorium-common
 include device/xiaomi/mithorium-common/BoardConfigCommon.mk
